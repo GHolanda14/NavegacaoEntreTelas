@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.emprestaai">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,10 +17,38 @@
         android:theme="@style/Theme.EmprestaAi"
         tools:targetApi="31">
         <activity
-            android:name=".Cadastro"
-            android:exported="false" />
+            android:name=".Activity.ListaPedidos"
+            android:exported="false"
+            android:label="@string/activityListaPedidos" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity.AlugarObjeto"
+            android:exported="false"
+            android:label="@string/activityAlugarObjeto" />
+        <activity
+            android:name=".Activity.PesquisarObjetos"
+            android:exported="true"
+            android:label="@string/activityPesquisar"
+            android:theme="@style/Theme.EmprestaAi.NoActionBar"></activity>
+        <activity
+            android:name=".Activity.VisualizarObjeto"
+            android:exported="false"
+            android:label="@string/activityVisualizarObjeto" />
+        <activity
+            android:name=".Activity.NovoObjeto"
+            android:exported="false"
+            android:label="@string/activityNovoObjeto" />
+        <activity
+            android:name=".Activity.MeusObjetos"
+            android:exported="true"
+            android:label="@string/activityMeusObjetos">
+
+        </activity>
+        <activity
+            android:name=".Activity.Cadastro"
+            android:exported="false"
+            android:label="@string/activityCadastro" />
+        <activity
+            android:name=".Activity.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,14 +57,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Login"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.LOGIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:name=".Activity.Login"
+            android:exported="false"
+            android:label="@string/activityLogin" />
+        <activity
+            android:name=".Activity.Solicitacoes"
+            android:exported="false"
+            android:label="@string/activityLogin" />
     </application>
 
 </manifest>
