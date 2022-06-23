@@ -46,10 +46,10 @@ public class GestorDeObjetos extends AppCompatActivity {
                     Toast.makeText(GestorDeObjetos.this, "Preencha todos os campos!", Toast.LENGTH_SHORT).show();
                 }else {
                     Intent intent = new Intent();
-                    intent.putExtra("id",getIntent().getIntExtra("id",0));
+                    intent.putExtra("posicao",getIntent().getIntExtra("posicao",0));
                     intent.putExtra("nome", etNome.getText().toString());
                     intent.putExtra("descricao", etDescricao.getText().toString());
-                    intent.putExtra("posicao",getIntent().getIntExtra("posicao",0));
+                    intent.putExtra("id",getIntent().getStringExtra("id"));
                     setResult(RESULT_OK, intent);
                     finish();
                 }

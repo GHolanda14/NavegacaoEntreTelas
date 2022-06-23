@@ -38,8 +38,7 @@ public class ObjetoAdapter extends RecyclerView.Adapter<ObjetoAdapter.ViewHolder
     @Override
     public void onBindViewHolder(@NonNull ObjetoAdapter.ViewHolder holder, int position) {
         holder.itemView.setTag(objetos.get(position));
-
-        holder.tvNome.setText(objetos.get(position).getNome()+" (id "+objetos.get(position).getId()+")");
+        holder.tvNome.setText(objetos.get(position).getNome()+" (id "+position+")");
         holder.tvDescricao.setText(objetos.get(position).getDescricao());
     }
 

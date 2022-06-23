@@ -3,9 +3,9 @@ package com.example.navegacaoentretelas;
 public class Objeto {
     private String nome;
     private String descricao;
-    private int id;
+    private String id;
 
-    public Objeto(String nome, String descricao ,int id) {
+    public Objeto(String nome, String descricao ,String id) {
         this.nome = nome;
         this.descricao = descricao;
         this.id = id;
@@ -27,11 +27,11 @@ public class Objeto {
         this.descricao = descricao;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "991108165766",
+    "project_id": "navegacao-telas-fa916",
+    "storage_bucket": "navegacao-telas-fa916.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991108165766:android:e0f5c93291da3ac240a107",
+        "android_client_info": {
+          "package_name": "com.example.navegacaoentretelas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991108165766-ftejhpcclq88grup43pt2klidkrfjf9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATSi6Beu9w_V1vn92NsoZq9A6BoyfcRu0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991108165766-ftejhpcclq88grup43pt2klidkrfjf9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
